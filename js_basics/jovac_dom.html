@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>DOM Example</title>
+
+    <style>
+        .light-mode{
+            background-color: white;
+            color: black;
+        }
+
+        .dark-mode{
+            background-color: black;
+            color: white;
+        }
+
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btn" class="light-mode">
+        Submit
+    </button>
+
+    <script>
+        // Select button
+        const btn = document.getElementById("btn");
+
+        // Add a class
+        btn.classList.add("dark-mode");
+
+        // Remove a class
+        btn.classList.remove("light-mode");
+
+        // Toggle a class
+       // btn.classList.toggle("hidden");
+
+        // Change CSS properties
+        btn.style.color = "white";
+        btn.style.backgroundColor = "blue";
+        btn.style.borderRadius = "10px";
+        btn.style.padding = "10px 20px";
+        btn.style.fontSize = "18px";
+    </script>
+
+</body>
+</html>
